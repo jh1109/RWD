@@ -168,7 +168,6 @@ input[type="search"] {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-/* 모바일 메인메뉴 */
 /* 모바일 메인 메뉴 */
 .menu__list {
   background: var(--accent-opacity-color);
@@ -225,7 +224,7 @@ input[type="search"] {
   }
 
   /* 데스크탑 메인 메뉴 */
-  .menu {
+  /* .menu {
     background: var(--secondary-color);
     padding: var(--spacing-base) var(--spacing-lg);
   }
@@ -242,6 +241,23 @@ input[type="search"] {
   }
 
   .menu__link {
+    color: var(--white);
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+  } */
+
+  /* 데스크탑 메인 메뉴(혼자 해보기) */
+  .menu {
+    background: var(--secondary-color);
+  }
+  .menu__list {
+    height: 6.375rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
     color: var(--white);
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
