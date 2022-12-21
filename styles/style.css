@@ -316,6 +316,17 @@ input[type="search"] {
   margin-top: var(--spacing-xs);
 }
 
+/* 공통 푸터 */
+.appFooter {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-base) var(--spacing-lg);
+}
+.address {
+  margin-bottom: var(--spacing-base);
+}
+
+
 
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
@@ -427,6 +438,12 @@ input[type="search"] {
   color: var(--accent-favorite);
   font-size: var(--text-sm);
   margin-left: var(--spacing-xs);
+}
+
+/* 모바일 푸터 */
+.address {
+  display: flex;
+  flex-flow: column nowrap;
 }
 }
 
@@ -552,6 +569,11 @@ input[type="search"] {
   }
   .board {
     /* grid-area: 3/6/4/13; */
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter {
+    text-align: center;
   }
 
 }
